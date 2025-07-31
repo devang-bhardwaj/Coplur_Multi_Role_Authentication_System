@@ -1,0 +1,221 @@
+--- PAGE 1 ---
+
+ㅓ
+
+COPLUR
+
+Bridging Talent & Empowering Futures
+
+Coplur Code Challenge: Role-Based Authentication Web Application
+
+Objective
+
+Build a web application that supports user authentication, role-based access control, and admin
+operations with proper backend and frontend separation. The system must be robust, handle edge
+cases, and demonstrate good coding practices with proper version control.
+
+Problem Statement
+
+Design and develop a Role-Based User Management Web Application with the following features:
+Authentication Features (Common for all users)
+
+Login
+
+Logout
+
+Change Password
+
+Register (as student only)
+
+Welcome Page upon successful login
+
+Roles
+
+Admin
+
+Student
+
+Admin Role Features
+
+Admin user must be created during application initialization (seeding).
+Only admin can:
+
+Create a new user
+
+Delete an existing user
+
+View a list of all users
+
+--- PAGE 2 ---
+
+COPLUR
+
+Bridging Talent & Empowering Futures
+
+Admin can assign roles when creating a new user.
+
+Admin has access to a dashboard with user management options.
+
+Student Role Features
+
+Can only view a welcome page after login.
+
+Cannot access user management screens.
+
+Technical Requirements
+
+Role-Based Access
+
+Ensure secure role-based routing and permissions.
+
+Unauthorized access should be blocked and redirected with proper messaging.
+
+Edge Case Handling
+
+Prevent duplicate users during registration.
+
+Show appropriate error for wrong credentials.
+
+Validate strong password policies (min length, etc.).
+
+Protect admin-only routes.
+
+Handle empty fields or malformed inputs gracefully.
+
+Tech Stack
+
+You may use any programming language or framework (e.g., JavaScript, Python, Java, PHP,
+C#, etc.).
+
+Frontend can be any library or framework (e.g., React, Angular, plain HTML/CSS/JS).
+Backend can be REST or GraphQL based.
+
+--- PAGE 3 ---
+
+COPLUR
+
+Bridging Talent & Empowering Futures
+
+Database
+
+Use any RDBMS (MySQL, PostgreSQL, SQL Server, SQLite) or NoSQL (MongoDB, etc.).
+Ensure proper schema design.
+
+Include initial seeding logic to create the default admin user.
+
+API Design
+
+Build well-structured REST APIs with appropriate HTTP verbs.
+Use proper response codes (200, 400, 401, 403, 500, etc.).
+Follow clean REST principles.
+
+Evaluation Criteria
+
+"Category
+","Description
+"
+
+,"Role Management Secure implementation with correct access control enforcement
+"
+"Edge Case
+Handling
+
+Code Quality
+
+Commit History
+","All validation and unexpected input handled gracefully
+Cleanmaintainable code with proper structure and logic
+Use Git with meaningful commits no one-liners or dumped final
+commits
+
+,
+"
+
+"Documentation
+","README explaining setup, usage, and any important notes
+"
+"Teamwork
+","Each member must contribute - teamwork will be reviewed
+"
+"Creativity & UI/UX
+","Bonus for good UI design and user experience
+"
+"Al Usage
+","If your code is detected to be fully copied from Al, you'll be rejected
+"
+
+--- PAGE 4 ---
+
+COPLUR
+
+Bridging Talent & Empowering Futures
+
+Team Rules
+
+Teams of 2 to 4 members.
+
+You must collaborate via Git (e.g., GitHub, GitLab, Bitbucket).
+
+Include a project board or task breakdown (can be done in README or tools like Trello,
+GitHub Projects, etc.).
+
+Deliverables
+
+By the end of the hackathon, you must submit:
+
+Git repository link (make sure it's public).
+
+README file containing:
+
+Project setup instructions
+
+Tech stack used
+
+. Admin credentials
+
+Screenshots (optional but recommended)
+
+Working demo (hosted or via local instructions).
+
+Each team member's contribution noted in the README.
+
+Tips
+
+Use middleware or decorators to handle role checking.
+
+Seed admin using migration scripts or seeders depending on your stack.
+Create a login session or JWT token-based authentication system.
+Keep your Ul clean and focused on functionality first.
+
+Timeline
+
+Hackathon Duration: [Specify Start and End Date]
+Submission Deadline: 11 am 1st Aug
+
+--- PAGE 5 ---
+
+COPLUR
+
+Bridging Talent & Empowering Futures
+
+Disqualification
+
+You will be disqualified if:
+
+Code is copied from Al without understanding or modification.
+
+You don't handle edge cases properly.
+
+The project has missing role enforcement or admin features incomplete.
+You don't commit code regularly or your repo looks like a last-minute dump.
+
+Final Note
+
+The goal of this challenge is to:
+
+Learn secure web application development.
+Practice team collaboration and Git workflows.
+
+Build production-grade logic with proper roles and permissions.
+
+Give your best shot. Build it like it's going live tomorrow..

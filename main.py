@@ -5,6 +5,10 @@ from auth import (
     show_navigation, validate_session, logout_user, is_admin, is_student,
     check_persistent_messages
 )
+from database import init_database
+
+# Initialize database on startup
+init_database()
 
 # Page configuration
 st.set_page_config(
