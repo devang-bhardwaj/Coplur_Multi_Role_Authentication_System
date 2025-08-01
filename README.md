@@ -100,7 +100,7 @@ streamlit run main.py
 ├── database.py          # Database operations & user management
 ├── requirements.txt     # Dependencies
 ├── .streamlit/          # Streamlit configuration
-└── components/
+└── pages/
     ├── admin.py        # Admin dashboard
     └── student.py      # Student portal
 ```

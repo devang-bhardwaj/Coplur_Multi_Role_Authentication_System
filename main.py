@@ -47,11 +47,9 @@ def show_home_page():
         
     # Role-specific quick actions
     if is_admin():
-        if st.button("👑 Go to Admin Dashboard"):
-            st.switch_page("components/admin.py")
+        st.page_link("pages/admin.py", label="👑 Go to Admin Dashboard", icon="👑")
     elif is_student():
-        if st.button("🎓 Go to Student Dashboard"):
-            st.switch_page("components/student.py")
+        st.page_link("pages/student.py", label="🎓 Go to Student Dashboard", icon="🎓")
 
 def show_user_view(view_type):
     """Handle different user view types"""
