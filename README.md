@@ -1,6 +1,20 @@
 # 🔐 Coplur Multi-Role Authentication System
 
-**COPLUR Code Challenge Submission** - A secure role-based authentication web application built with Streamlit.
+**COPLUR## 🔑 Default Demo Credentials
+
+**For visitors to explore the application:**
+
+**Admin User** (Full management access):
+- **Username**: `admin`
+- **Email**: `admin@coplur.com` 
+- **Password**: `Admin123!`
+
+**Student User** (Limited dashboard access):
+- **Username**: `student`
+- **Email**: `student@demo.com`
+- **Password**: `Student123!`
+
+> 💡 **Tip**: These credentials are displayed in an expandable info box on the login page for easy access!Challenge Submission** - A secure role-based authentication web application built with Streamlit.
 
 ## 🌐 Live Demo
 **🚀 [View Live Application](https://coplurmultiroleothsystem.streamlit.app/)**
@@ -86,7 +100,7 @@ streamlit run main.py
 ├── database.py          # Database operations & user management
 ├── requirements.txt     # Dependencies
 ├── .streamlit/          # Streamlit configuration
-└── pages/
+└── components/
     ├── admin.py        # Admin dashboard
     └── student.py      # Student portal
 ```

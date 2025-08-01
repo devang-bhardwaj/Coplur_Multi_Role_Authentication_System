@@ -26,7 +26,7 @@ def handle_db_operation(operation_func):
     return wrapper
 
 def init_database():
-    """Initialize database with users table and default admin"""
+    """Initialize database with users table and default admin and student"""
     with get_db_connection() as conn:
         cursor = conn.cursor()
         
@@ -53,6 +53,17 @@ def init_database():
                 INSERT INTO users (username, email, password_hash, role) 
                 VALUES (?, ?, ?, ?)
             """, ('admin', 'admin@coplur.com', admin_password, 'admin'))
+        
+        # Create default student for demo purposes if none exists
+        cursor.execute("SELECT COUNT(*) FROM users WHERE username = 'student'")
+        student_count = cursor.fetchone()[0]
+        
+        if student_count == 0:
+            student_password = hash_password('Student123!')
+            cursor.execute("""
+                INSERT INTO users (username, email, password_hash, role) 
+                VALUES (?, ?, ?, ?)
+            """, ('student', 'student@demo.com', student_password, 'student'))
             
         conn.commit()
 

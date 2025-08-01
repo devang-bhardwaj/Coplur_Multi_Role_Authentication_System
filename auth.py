@@ -268,10 +268,10 @@ def show_navigation():
     st.sidebar.markdown("## 🧭 Navigation")
     
     if is_admin():
-        st.sidebar.page_link("pages/admin.py", label="Admin Dashboard", icon="👑")
+        st.sidebar.page_link("components/admin.py", label="Admin Dashboard", icon="👑")
         st.sidebar.page_link("main.py", label="Home", icon="👑")
     elif is_student():
-        st.sidebar.page_link("pages/student.py", label="🎓 Student Dashboard", icon="🏠")
+        st.sidebar.page_link("components/student.py", label="🎓 Student Dashboard", icon="🏠")
         st.sidebar.page_link("main.py", label="Home", icon="🏠")
 
 def display_user_info():

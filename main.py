@@ -48,10 +48,10 @@ def show_home_page():
     # Role-specific quick actions
     if is_admin():
         if st.button("👑 Go to Admin Dashboard"):
-            st.switch_page("pages/admin.py")
+            st.switch_page("components/admin.py")
     elif is_student():
         if st.button("🎓 Go to Student Dashboard"):
-            st.switch_page("pages/student.py")
+            st.switch_page("components/student.py")
 
 def show_user_view(view_type):
     """Handle different user view types"""
@@ -81,6 +81,23 @@ def show_user_view(view_type):
 
 def show_public_page():
     """Display simple public landing page for non-authenticated users"""
+    
+    # Demo credentials info box
+    with st.expander("🎯 Demo Credentials - Try the App!", expanded=False):
+        st.info("**For visitors to explore the application:**")
+        
+        col1, col2 = st.columns(2)
+        with col1:
+            st.markdown("**👑 Admin Access:**")
+            st.code("Username: admin\nPassword: Admin123!")
+            st.caption("Full user management capabilities")
+        
+        with col2:
+            st.markdown("**🎓 Student Access:**")
+            st.code("Username: student\nPassword: Student123!")
+            st.caption("Personal dashboard access")
+        
+        st.warning("⚠️ Note: These are demo accounts for testing purposes only.")
     
     # Login and Registration tabs
     tab1, tab2 = st.tabs(["🔐 Login", "📝 Register"])
